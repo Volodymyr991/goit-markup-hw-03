@@ -2,7 +2,7 @@
   --main-font-family: "Roboto", sans-serif;
   --theme-color: #2e2f42;
 }
-/* Скидання стилів */
+/* ===================Скидання стилів======= */
 .list {
   list-style: none;
 }
@@ -43,7 +43,7 @@ img {
   padding: 0 15px;
 }
 
-/* =======COMPONENTS======== */
+/* ====================COMPONENTS==================== */
 
 body {
   font-family: var(--main-font-family);
@@ -60,6 +60,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+.logo-header {
+  margin-right: 76px;
 }
 
 .logo-dark {
@@ -89,19 +93,20 @@ body {
 .page-nav {
   display: flex;
   align-items: center;
-  column-gap: 76px;
+  /* column-gap: 76px; */
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
+  /* column-gap: 40px; */
 }
 
 .address-list {
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .nav-link {
@@ -110,6 +115,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -156,10 +162,12 @@ body {
 }
 
 .order-btn {
+  border: none;
   display: block;
   margin-left: auto;
   margin-right: auto;
   min-width: 169px;
+  min-height: 56px;
   padding: 16px 32px;
   font-weight: 500;
   font-size: 16px;
@@ -185,9 +193,13 @@ body {
 .advantages-list {
   display: flex;
   min-width: 264px;
-  column-gap: 22px;
+  gap: 24px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.advantages {
+  width: calc((100%-72px) / 4);
 }
 
 .title-sections {
@@ -209,6 +221,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 /* Text description */
 .text-description {
@@ -228,7 +241,7 @@ body {
 .card-list {
   display: flex;
   align-items: center;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 /*===================== OUR TEAM================== */
@@ -241,11 +254,10 @@ body {
 
 .our-team-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
 }
 
 .team-list-card {
-  /* flex-basis: calc(100% / 4); */
   flex-basis: calc((100% - 3 * 24) / 4);
   background-color: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -278,7 +290,7 @@ body {
 }
 
 .logo-footer {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .text-footer {
