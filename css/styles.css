@@ -290,6 +290,7 @@ body {
 }
 
 .logo-footer {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -312,9 +313,9 @@ body {
 /* ==============BUTTONS LIST =============*/
 .buttons-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .button-filtr {
@@ -335,6 +336,7 @@ body {
 
 .button-filtr:hover,
 .button-filtr:focus {
+  border: 1px solid transparent;
   background-color: #404bbf;
   color: #ffffff;
 }
@@ -345,9 +347,11 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
-/* project list */
+/* project card */
+
 .projects-list {
   display: flex;
   flex-wrap: wrap;
@@ -358,11 +362,10 @@ body {
 .item-card {
   max-width: 360px;
   background: #ffffff;
-  border: 1px solid #e7e9fc;
 }
 
 .text-card-portfolio {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 16px;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
